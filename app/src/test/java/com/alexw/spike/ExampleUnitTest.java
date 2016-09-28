@@ -10,8 +10,10 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
+//
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void addition_isCorrect_if_empty() throws Exception {
+        Palindrome palindrome = new Palindrome();
+        assertEquals(true, palindrome.isPalindrome("lol"));
     }
 }
