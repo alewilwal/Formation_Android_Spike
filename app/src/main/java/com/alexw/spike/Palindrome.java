@@ -6,28 +6,27 @@ package com.alexw.spike;
 
 public class Palindrome {
 
-    public boolean isPalindrome(String inputWord){
-
-        inputWord = inputWord.toLowerCase();
-
+    public static boolean isPalindrome(String s0){
+        s0 = s0.toLowerCase();
         int gauche = 0;
-        int droite = inputWord.length() - 1;
+        int droite = s0.length() - 1;
         boolean palindrome = true;
         while ((gauche < droite) && palindrome) {
-            if (inputWord.charAt(gauche) != inputWord.charAt(droite)) {
+            if (s0.charAt(gauche) != s0.charAt(droite)) {
                 palindrome = false;
             }
             gauche++;
             droite--;
         }
-
         if (palindrome) {
             return true;
         } else {
             return false;
         }
-        
-
     }
+
+
+
+
     
 }

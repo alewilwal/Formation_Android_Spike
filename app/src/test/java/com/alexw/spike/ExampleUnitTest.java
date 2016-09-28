@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
 //
     @Test
-    public void addition_isCorrect_if_empty() throws Exception {
+    public void addition_isCorrect_if_isPalindrome() throws Exception {
         Palindrome palindrome = new Palindrome();
         assertEquals(true, palindrome.isPalindrome("lol"));
     }
