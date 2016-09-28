@@ -13,34 +13,70 @@
 
     <Button
         android:id="@+id/button_palindrome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Palindrome"
         android:onClick="openPalindrome"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginBottom="50px"
         />
 
     <Button
-        android:id="@+id/button_parenthesis"
-        android:layout_width="wrap_content"
+        android:id="@+id/button_brackets"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Brackets"
         android:onClick="openBrackets"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginBottom="50px"
         />
 
     <Button
         android:id="@+id/button_fibonacci"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fibonacci"
         android:onClick="openFibonacci"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginBottom="50px"
         />
 
     <Button
         android:id="@+id/button_random_text"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RandomText"
         android:onClick="openRandomText"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginBottom="50px"
         />
 
 

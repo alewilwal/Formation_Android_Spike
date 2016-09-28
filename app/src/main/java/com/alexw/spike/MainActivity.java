@@ -19,18 +19,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openBrackets(View view) {
-        Intent intent = new Intent(this, BracketsActivity.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(this, BracketsActivity.class);
+        startActivity(intent2);
     }
 
     public void openFibonacci(View view) {
-        Intent intent = new Intent(this, FibonacciActivity.class);
-        startActivity(intent);
+        Intent intent3 = new Intent(this, FibonacciActivity.class);
+        startActivity(intent3);
     }
 
     public void openRandomText(View view) {
-        Intent intent = new Intent(this, RandomTextActivity.class);
-        startActivity(intent);
+        Intent intent4 = new Intent(this, RandomTextActivity.class);
+        startActivity(intent4);
     }
 
 
