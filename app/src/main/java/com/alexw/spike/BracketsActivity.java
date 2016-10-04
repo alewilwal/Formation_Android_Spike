@@ -1,9 +1,13 @@
 package com.alexw.spike;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -15,8 +19,13 @@ public class BracketsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_brackets);
 
         final EditText editTextBrackets = (EditText) findViewById(R.id.edit_text_brackets);
-        final TextView textViewBrackets = (TextView) findViewById(R.id.text_brackets);
 
+        final FloatingActionButton myFabView = (FloatingActionButton) findViewById(R.id.myFAB);
+        myFabView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View myView) {
+
+            }
+        });
 
         editTextBrackets.addTextChangedListener(new TextWatcher() {
                                             @Override
@@ -30,7 +39,6 @@ public class BracketsActivity extends AppCompatActivity {
 
                                                 String strBrackets = editTextBrackets.getText().toString();
                                                 int compteur = 0;
-                                                String result = "";
                                                 StringBuffer strBuff = new StringBuffer(strBrackets);
                                                 for (int x = 0; x < strBuff.length(); x++){
                                                     if(strBuff.charAt(x) == '('){
@@ -39,13 +47,12 @@ public class BracketsActivity extends AppCompatActivity {
                                                         compteur--;
                                                     }
                                                     if(compteur == 0){
-                                                        result = "OK";
+                                                        myFabView.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#4CAF50")));
                                                     } else{
-                                                        result = "NO";
+                                                        myFabView.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#FF5252")));
                                                     }
                                                 }
-                                                TextView textViewBrackets = (TextView) findViewById(R.id.text_brackets);
-                                                textViewBrackets.setText(result);
+
 
                                             }
 
