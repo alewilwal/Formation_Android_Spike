@@ -41,7 +41,7 @@ public class PalindromeActivity extends AppCompatActivity {
                 /* Reverse the word */
                 textView0.setText(new StringBuilder(editText.getText().toString()).reverse().toString());
 
-                /* Change FAB color is is Palindrome */
+                /* Change FAB color if is Palindrome */
                 if(Palindrome.isPalindrome(editText.getText().toString())){
                     myFabView.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#4CAF50")));
                 }else{
